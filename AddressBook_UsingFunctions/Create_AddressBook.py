@@ -87,7 +87,7 @@ def delete_contact():
 
 def create_addressbook():
     addressbook_name = input("Enter the Name you want to give to AddressBook:")
-    addressbook[addressbook_name] = "my_contacts_list"
+    addressbook[addressbook_name] = my_contacts_list
     print("AddressBook Created Successfully")
 
 
