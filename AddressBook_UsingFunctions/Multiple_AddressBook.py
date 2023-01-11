@@ -97,11 +97,10 @@ def create_addressbook():
 def display_addressbook():
     for item in addressbook:
         print("AddressBook Name is:", item)
-        for data in addressbook.values():
-            for new_data in data:
-                for x, y in new_data.items():
-                    print(x, ":", y)
-                print("---------------------------------------")
+        for data in addressbook[item]:
+            for x, y in data.items():
+                print(x, ":", y)
+            print("---------------------------------------")
         print("*****************************************")
 
 
